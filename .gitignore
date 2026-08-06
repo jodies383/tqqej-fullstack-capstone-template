@@ -134,3 +134,4 @@ django-backend/.venv
 frontend/node_modules/
 .DS_Store
 .env
+submissions/

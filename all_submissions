@@ -1,21 +1,26 @@
 --- all_submissions: aggregated artifact file ---
 
+Task: Dealer list (all dealers)
 File: submissions/aetalidealers
 ----------------------------------------------------------------
 {"count":4,"next":null,"previous":null,"results":[{"id":1,"name":"North Hills Auto","address":"100 Main St","city":"Raleigh","state":"NC","zip_code":"27601","phone":"919-555-1001"},{"id":2,"name":"Sunset Motors","address":"220 Ocean Ave","city":"Miami","state":"FL","zip_code":"33139","phone":"305-555-2200"},{"id":3,"name":"Bay Area Autos","address":"10 Market St","city":"San Francisco","state":"CA","zip_code":"94105","phone":"415-555-3003"},{"id":4,"name":"Lakeside Car Center","address":"77 Lake Rd","city":"Austin","state":"TX","zip_code":"78701","phone":"512-555-4044"}]}
 
+Task: Dealer list text output
 File: submissions/aetalidealers.txt
 ----------------------------------------------------------------
 {"count":4,"next":null,"previous":null,"results":[{"id":1,"name":"North Hills Auto","address":"100 Main St","city":"Raleigh","state":"NC","zip_code":"27601","phone":"919-555-1001"},{"id":2,"name":"Sunset Motors","address":"220 Ocean Ave","city":"Miami","state":"FL","zip_code":"33139","phone":"305-555-2200"},{"id":3,"name":"Bay Area Autos","address":"10 Market St","city":"San Francisco","state":"CA","zip_code":"94105","phone":"415-555-3003"},{"id":4,"name":"Lakeside Car Center","address":"77 Lake Rd","city":"Austin","state":"TX","zip_code":"78701","phone":"512-555-4044"}]}
 
+Task: Create dealer review
 File: submissions/aetdealerreviews
 ----------------------------------------------------------------
 {"id":5,"user":1,"name":"Automated","dealership":3,"review":"Fantastic services","time":"2026-08-06T13:08:23.654575Z","purchase":true,"purchase_date":"2024-07-11","car_make":null,"car_model":null,"car_year":null}
 
+Task: Create dealer review text output
 File: submissions/aetdealerreviews.txt
 ----------------------------------------------------------------
 {"id":5,"user":1,"name":"Automated","dealership":3,"review":"Fantastic services","time":"2026-08-06T13:08:23.654575Z","purchase":true,"purchase_date":"2024-07-11","car_make":null,"car_model":null,"car_year":null}
 
+Task: Dealer review list for dealer 3
 File: submissions/aetdealerreviews_list
 ----------------------------------------------------------------
 [
@@ -47,22 +52,27 @@ File: submissions/aetdealerreviews_list
   }
 ]
 
+Task: Sentiment analysis
 File: submissions/analyzereview
 ----------------------------------------------------------------
 {"sentimentScore":1,"sentiment":"positive"}
 
+Task: Sentiment analysis text output
 File: submissions/analyzereview.txt
 ----------------------------------------------------------------
 {"sentimentScore":1,"sentiment":"positive"}
 
+Task: Authentication token
 File: submissions/demo_token
 ----------------------------------------------------------------
 9dacb36fca13992faf7764fee0cbb4da30ac9abd
 
+Task: Backend server status
 File: submissions/django_server
 ----------------------------------------------------------------
 Server running at http://127.0.0.1:8001/
 
+Task: Backend server documentation output
 File: submissions/django_server_output.txt
 ----------------------------------------------------------------
 # Django backend for Dealership Reviews
@@ -135,38 +145,47 @@ curl -X POST http://127.0.0.1:8000/api/reviews/ \
 	-d '{"name":"Alice","dealership":1,"review":"Great service","purchase":true,"purchase_date":"2022-01-10"}'
 ```
 
+Task: List car makes
 File: submissions/getallcarmakes
 ----------------------------------------------------------------
 [{"id":1,"name":"Audi"},{"id":2,"name":"BMW"},{"id":3,"name":"Toyota"}]
 
+Task: List car makes text output
 File: submissions/getallcarmakes.txt
 ----------------------------------------------------------------
 [{"id":1,"name":"Audi"},{"id":2,"name":"BMW"},{"id":3,"name":"Toyota"}]
 
+Task: List car models
 File: submissions/getallcarmodels
 ----------------------------------------------------------------
 [{"id":3,"name":"3 Series","year":null,"make":2},{"id":4,"name":"5 Series","year":null,"make":2},{"id":1,"name":"A4","year":null,"make":1},{"id":2,"name":"A6","year":null,"make":1},{"id":5,"name":"Camry","year":null,"make":3},{"id":6,"name":"Corolla","year":null,"make":3}]
 
+Task: List car models text output
 File: submissions/getallcarmodels.txt
 ----------------------------------------------------------------
 [{"id":3,"name":"3 Series","year":null,"make":2},{"id":4,"name":"5 Series","year":null,"make":2},{"id":1,"name":"A4","year":null,"make":1},{"id":2,"name":"A6","year":null,"make":1},{"id":5,"name":"Camry","year":null,"make":3},{"id":6,"name":"Corolla","year":null,"make":3}]
 
+Task: Dealer detail by ID
 File: submissions/getdealerbyid
 ----------------------------------------------------------------
 {"id":3,"name":"Bay Area Autos","address":"10 Market St","city":"San Francisco","state":"CA","zip_code":"94105","phone":"415-555-3003","reviews":[{"id":3,"user":1,"name":"Nadia","dealership":3,"review":"Very transparent on pricing.","time":"2026-08-06T12:14:36.464345Z","purchase":true,"purchase_date":"2026-08-03","car_make":1,"car_model":3,"car_year":2020}]}
 
+Task: Dealer detail by ID text output
 File: submissions/getdealerbyid.txt
 ----------------------------------------------------------------
 {"id":3,"name":"Bay Area Autos","address":"10 Market St","city":"San Francisco","state":"CA","zip_code":"94105","phone":"415-555-3003","reviews":[{"id":3,"user":1,"name":"Nadia","dealership":3,"review":"Very transparent on pricing.","time":"2026-08-06T12:14:36.464345Z","purchase":true,"purchase_date":"2026-08-03","car_make":1,"car_model":3,"car_year":2020}]}
 
+Task: Filter dealers by state
 File: submissions/getdealersbyState
 ----------------------------------------------------------------
 {"count":0,"next":null,"previous":null,"results":[]}
 
+Task: Filter dealers by state text output
 File: submissions/getdealersbyState.txt
 ----------------------------------------------------------------
 {"count":0,"next":null,"previous":null,"results":[]}
 
+Task: Get reviews for dealer 3
 File: submissions/getreviews_dealer3.txt
 ----------------------------------------------------------------
 [
@@ -198,18 +217,22 @@ File: submissions/getreviews_dealer3.txt
   }
 ]
 
+Task: User login
 File: submissions/loginuser
 ----------------------------------------------------------------
 {"token":"9dacb36fca13992faf7764fee0cbb4da30ac9abd","user":{"id":1,"username":"demo","email":"demo@example.com","first_name":"","last_name":""},"detail":"Logged in successfully."}
 
+Task: User login text output
 File: submissions/loginuser.txt
 ----------------------------------------------------------------
 {"token":"9dacb36fca13992faf7764fee0cbb4da30ac9abd","user":{"id":1,"username":"demo","email":"demo@example.com","first_name":"","last_name":""},"detail":"Logged in successfully."}
 
+Task: User logout
 File: submissions/logoutuser
 ----------------------------------------------------------------
 {"detail":"Logged out successfully."}
 
+Task: User logout text output
 File: submissions/logoutuser.txt
 ----------------------------------------------------------------
 {"detail":"Logged out successfully."}
