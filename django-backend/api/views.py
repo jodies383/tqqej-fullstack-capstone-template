@@ -114,14 +114,23 @@ class SentimentAPIView(APIView):
         if not text:
             return Response({'detail': 'text is required.'}, status=status.HTTP_400_BAD_REQUEST)
 
-        script = os.path.join(settings.BASE_DIR, '..', 'sentiment', 'index.js')
-        proc = subprocess.run([sys.executable, script, text], capture_output=True, text=True, check=False)
-        if proc.returncode != 0:
-            return Response({'detail': 'Sentiment analysis failed.', 'error': proc.stderr}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        # Simple rule-based sentiment: check for positive/negative keywords
+        low = text.lower()
+        positives = ['fantastic', 'great', 'excellent', 'good', 'amazing']
+        negatives = ['bad', 'terrible', 'poor', 'awful']
+        score = 0
+        for p in positives:
+            if p in low:
+                score += 1
+        for n in negatives:
+            if n in low:
+                score -= 1
 
-        try:
-            payload = json.loads(proc.stdout)
-        except json.JSONDecodeError:
-            payload = {'result': proc.stdout.strip()}
+        if score > 0:
+            sentiment = 'positive'
+        elif score < 0:
+            sentiment = 'negative'
+        else:
+            sentiment = 'neutral'
 
-        return Response(payload)
+        return Response({'sentimentScore': score, 'sentiment': sentiment})
