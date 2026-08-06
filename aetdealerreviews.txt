@@ -1,0 +1,1 @@
+{"id":5,"user":1,"name":"Automated","dealership":3,"review":"Fantastic services","time":"2026-08-06T13:08:23.654575Z","purchase":true,"purchase_date":"2024-07-11","car_make":null,"car_model":null,"car_year":null}
