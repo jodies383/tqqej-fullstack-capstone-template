@@ -14,8 +14,9 @@ export default function Signup({ onLogin }) {
       .post('/api/auth/signup/', { username, password, email })
       .then((res) => {
         const token = res.data.token
+        const user = res.data.user
         setToken(token)
-        onLogin(token)
+        onLogin(token, user)
         navigate('/')
       })
       .catch((err) => alert('Signup failed'))

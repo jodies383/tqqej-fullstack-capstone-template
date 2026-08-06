@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #222; }
+nav { background: #0b3d91; padding: 14px 20px; }
+nav a { color: white; text-decoration: none; margin-right: 16px; }
+main { padding: 24px; max-width: 920px; margin: 0 auto; }
+.team { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+article { border: 1px solid #ddd; padding: 16px; border-radius: 8px; }
+img { max-width: 100%; border-radius: 8px; }
+.role { font-weight: bold; color: #0b3d91; }

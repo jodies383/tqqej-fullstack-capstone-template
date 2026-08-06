@@ -13,8 +13,9 @@ export default function Login({ onLogin }) {
       .post('/api-token-auth/', { username, password })
       .then((res) => {
         const token = res.data.token
+        const user = res.data.user
         setToken(token)
-        onLogin(token)
+        onLogin(token, user)
         navigate('/')
       })
       .catch((err) => alert('Login failed'))

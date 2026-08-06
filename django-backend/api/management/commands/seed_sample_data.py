@@ -34,6 +34,7 @@ class Command(BaseCommand):
             {'name': 'Sunset Motors', 'address': '220 Ocean Ave', 'city': 'Miami', 'state': 'FL', 'zip_code': '33139', 'phone': '305-555-2200'},
             {'name': 'Bay Area Autos', 'address': '10 Market St', 'city': 'San Francisco', 'state': 'CA', 'zip_code': '94105', 'phone': '415-555-3003'},
             {'name': 'Lakeside Car Center', 'address': '77 Lake Rd', 'city': 'Austin', 'state': 'TX', 'zip_code': '78701', 'phone': '512-555-4044'},
+            {'name': 'Prairie View Motors', 'address': '300 Main St', 'city': 'Wichita', 'state': 'KS', 'zip_code': '67202', 'phone': '316-555-5050'},
         ]
 
         for data in dealerships:

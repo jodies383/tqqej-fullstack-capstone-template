@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import api from '../api'
 import { Link } from 'react-router-dom'
 
-export default function Home() {
+export default function Home({ user }) {
   const [dealers, setDealers] = useState([])
   const [state, setState] = useState('all')
   const [search, setSearch] = useState('')
@@ -41,6 +41,7 @@ export default function Home() {
   return (
     <div style={{ padding: 20 }}>
       <h2>Dealerships</h2>
+      <p>{user ? `Signed in as ${user.username}` : 'Browse dealerships and review a branch.'}</p>
       <form onSubmit={onSubmit} style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
         <input
           placeholder="Search name, city, or state"
@@ -75,6 +76,7 @@ export default function Home() {
               <td>{d.state}</td>
               <td>
                 <Link to={`/dealership/${d.id}`}>Details</Link>
+                {user ? <> | <Link to={`/review/${d.id}`}>Review Dealer</Link></> : null}
               </td>
             </tr>
           ))}
