@@ -1,0 +1,215 @@
+--- all_submissions: aggregated artifact file ---
+
+File: submissions/aetalidealers
+----------------------------------------------------------------
+{"count":4,"next":null,"previous":null,"results":[{"id":1,"name":"North Hills Auto","address":"100 Main St","city":"Raleigh","state":"NC","zip_code":"27601","phone":"919-555-1001"},{"id":2,"name":"Sunset Motors","address":"220 Ocean Ave","city":"Miami","state":"FL","zip_code":"33139","phone":"305-555-2200"},{"id":3,"name":"Bay Area Autos","address":"10 Market St","city":"San Francisco","state":"CA","zip_code":"94105","phone":"415-555-3003"},{"id":4,"name":"Lakeside Car Center","address":"77 Lake Rd","city":"Austin","state":"TX","zip_code":"78701","phone":"512-555-4044"}]}
+
+File: submissions/aetalidealers.txt
+----------------------------------------------------------------
+{"count":4,"next":null,"previous":null,"results":[{"id":1,"name":"North Hills Auto","address":"100 Main St","city":"Raleigh","state":"NC","zip_code":"27601","phone":"919-555-1001"},{"id":2,"name":"Sunset Motors","address":"220 Ocean Ave","city":"Miami","state":"FL","zip_code":"33139","phone":"305-555-2200"},{"id":3,"name":"Bay Area Autos","address":"10 Market St","city":"San Francisco","state":"CA","zip_code":"94105","phone":"415-555-3003"},{"id":4,"name":"Lakeside Car Center","address":"77 Lake Rd","city":"Austin","state":"TX","zip_code":"78701","phone":"512-555-4044"}]}
+
+File: submissions/aetdealerreviews
+----------------------------------------------------------------
+{"id":5,"user":1,"name":"Automated","dealership":3,"review":"Fantastic services","time":"2026-08-06T13:08:23.654575Z","purchase":true,"purchase_date":"2024-07-11","car_make":null,"car_model":null,"car_year":null}
+
+File: submissions/aetdealerreviews.txt
+----------------------------------------------------------------
+{"id":5,"user":1,"name":"Automated","dealership":3,"review":"Fantastic services","time":"2026-08-06T13:08:23.654575Z","purchase":true,"purchase_date":"2024-07-11","car_make":null,"car_model":null,"car_year":null}
+
+File: submissions/aetdealerreviews_list
+----------------------------------------------------------------
+[
+  {
+    "id": 5,
+    "user": 1,
+    "name": "Automated",
+    "dealership": 3,
+    "review": "Fantastic services",
+    "time": "2026-08-06T13:08:23.654575Z",
+    "purchase": true,
+    "purchase_date": "2024-07-11",
+    "car_make": null,
+    "car_model": null,
+    "car_year": null
+  },
+  {
+    "id": 3,
+    "user": 1,
+    "name": "Nadia",
+    "dealership": 3,
+    "review": "Very transparent on pricing.",
+    "time": "2026-08-06T12:14:36.464345Z",
+    "purchase": true,
+    "purchase_date": "2026-08-03",
+    "car_make": 1,
+    "car_model": 3,
+    "car_year": 2020
+  }
+]
+
+File: submissions/analyzereview
+----------------------------------------------------------------
+{"sentimentScore":1,"sentiment":"positive"}
+
+File: submissions/analyzereview.txt
+----------------------------------------------------------------
+{"sentimentScore":1,"sentiment":"positive"}
+
+File: submissions/demo_token
+----------------------------------------------------------------
+9dacb36fca13992faf7764fee0cbb4da30ac9abd
+
+File: submissions/django_server
+----------------------------------------------------------------
+Server running at http://127.0.0.1:8001/
+
+File: submissions/django_server_output.txt
+----------------------------------------------------------------
+# Django backend for Dealership Reviews
+
+Quick start instructions to run the API locally for development.
+
+1. Create a virtual environment and install dependencies
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+2. Run migrations and create a superuser
+
+```bash
+python manage.py migrate
+python manage.py createsuperuser
+```
+
+3. (Optional) create some dealerships via admin at `/admin/`
+
+4. Run the development server
+
+```bash
+python manage.py runserver
+```
+
+Key endpoints
+
+- `GET /api/dealerships/` - list dealerships. add `?state=CA` or `?state=all`
+- `GET /api/dealerships/<id>/` - dealership details and reviews
+- `POST /api/reviews/` - create a review (requires Token auth)
+- `POST /api-token-auth/` - obtain auth token (send `username` and `password`)
+
+Authentication examples
+
+1) Signup (creates a new user and returns a token):
+
+```bash
+curl -X POST http://127.0.0.1:8000/api/auth/signup/ \
+	-H "Content-Type: application/json" \
+	-d '{"username":"alice","password":"s3cret","email":"alice@example.com"}'
+```
+
+Response:
+
+```json
+{
+	"token": "<token_key>",
+	"user": {"id":1,"username":"alice","email":"alice@example.com","first_name":"","last_name":""}
+}
+```
+
+2) Obtain token for existing user (login):
+
+```bash
+curl -X POST http://127.0.0.1:8000/api-token-auth/ \
+	-H "Content-Type: application/json" \
+	-d '{"username":"alice","password":"s3cret"}'
+```
+
+3) Create a review using the token:
+
+```bash
+curl -X POST http://127.0.0.1:8000/api/reviews/ \
+	-H "Content-Type: application/json" \
+	-H "Authorization: Token <token_key>" \
+	-d '{"name":"Alice","dealership":1,"review":"Great service","purchase":true,"purchase_date":"2022-01-10"}'
+```
+
+File: submissions/getallcarmakes
+----------------------------------------------------------------
+[{"id":1,"name":"Audi"},{"id":2,"name":"BMW"},{"id":3,"name":"Toyota"}]
+
+File: submissions/getallcarmakes.txt
+----------------------------------------------------------------
+[{"id":1,"name":"Audi"},{"id":2,"name":"BMW"},{"id":3,"name":"Toyota"}]
+
+File: submissions/getallcarmodels
+----------------------------------------------------------------
+[{"id":3,"name":"3 Series","year":null,"make":2},{"id":4,"name":"5 Series","year":null,"make":2},{"id":1,"name":"A4","year":null,"make":1},{"id":2,"name":"A6","year":null,"make":1},{"id":5,"name":"Camry","year":null,"make":3},{"id":6,"name":"Corolla","year":null,"make":3}]
+
+File: submissions/getallcarmodels.txt
+----------------------------------------------------------------
+[{"id":3,"name":"3 Series","year":null,"make":2},{"id":4,"name":"5 Series","year":null,"make":2},{"id":1,"name":"A4","year":null,"make":1},{"id":2,"name":"A6","year":null,"make":1},{"id":5,"name":"Camry","year":null,"make":3},{"id":6,"name":"Corolla","year":null,"make":3}]
+
+File: submissions/getdealerbyid
+----------------------------------------------------------------
+{"id":3,"name":"Bay Area Autos","address":"10 Market St","city":"San Francisco","state":"CA","zip_code":"94105","phone":"415-555-3003","reviews":[{"id":3,"user":1,"name":"Nadia","dealership":3,"review":"Very transparent on pricing.","time":"2026-08-06T12:14:36.464345Z","purchase":true,"purchase_date":"2026-08-03","car_make":1,"car_model":3,"car_year":2020}]}
+
+File: submissions/getdealerbyid.txt
+----------------------------------------------------------------
+{"id":3,"name":"Bay Area Autos","address":"10 Market St","city":"San Francisco","state":"CA","zip_code":"94105","phone":"415-555-3003","reviews":[{"id":3,"user":1,"name":"Nadia","dealership":3,"review":"Very transparent on pricing.","time":"2026-08-06T12:14:36.464345Z","purchase":true,"purchase_date":"2026-08-03","car_make":1,"car_model":3,"car_year":2020}]}
+
+File: submissions/getdealersbyState
+----------------------------------------------------------------
+{"count":0,"next":null,"previous":null,"results":[]}
+
+File: submissions/getdealersbyState.txt
+----------------------------------------------------------------
+{"count":0,"next":null,"previous":null,"results":[]}
+
+File: submissions/getreviews_dealer3.txt
+----------------------------------------------------------------
+[
+  {
+    "id": 5,
+    "user": 1,
+    "name": "Automated",
+    "dealership": 3,
+    "review": "Fantastic services",
+    "time": "2026-08-06T13:08:23.654575Z",
+    "purchase": true,
+    "purchase_date": "2024-07-11",
+    "car_make": null,
+    "car_model": null,
+    "car_year": null
+  },
+  {
+    "id": 3,
+    "user": 1,
+    "name": "Nadia",
+    "dealership": 3,
+    "review": "Very transparent on pricing.",
+    "time": "2026-08-06T12:14:36.464345Z",
+    "purchase": true,
+    "purchase_date": "2026-08-03",
+    "car_make": 1,
+    "car_model": 3,
+    "car_year": 2020
+  }
+]
+
+File: submissions/loginuser
+----------------------------------------------------------------
+{"token":"9dacb36fca13992faf7764fee0cbb4da30ac9abd","user":{"id":1,"username":"demo","email":"demo@example.com","first_name":"","last_name":""},"detail":"Logged in successfully."}
+
+File: submissions/loginuser.txt
+----------------------------------------------------------------
+{"token":"9dacb36fca13992faf7764fee0cbb4da30ac9abd","user":{"id":1,"username":"demo","email":"demo@example.com","first_name":"","last_name":""},"detail":"Logged in successfully."}
+
+File: submissions/logoutuser
+----------------------------------------------------------------
+{"detail":"Logged out successfully."}
+
+File: submissions/logoutuser.txt
+----------------------------------------------------------------
+{"detail":"Logged out successfully."}
