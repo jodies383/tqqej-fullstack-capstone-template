@@ -1,0 +1,8 @@
+[11/Aug/2026 12:11:09] "GET /api/dealerships/ HTTP/1.1" 200 1310
+[11/Aug/2026 12:11:11,160] - Broken pipe from ('127.0.0.1', 63068)
+[11/Aug/2026 12:14:40] "GET /api/dealerships/ HTTP/1.1" 200 1310
+[11/Aug/2026 12:16:10] "GET /api/dealerships/ HTTP/1.1" 200 1310
+[11/Aug/2026 12:16:10,820] - Broken pipe from ('127.0.0.1', 62999)
+[11/Aug/2026 12:16:27] "GET /api/dealerships/ HTTP/1.1" 200 1310
+[11/Aug/2026 12:16:28] "GET / HTTP/1.1" 302 0
+[11/Aug/2026 12:16:29] "GET /api/dealerships/ HTTP/1.1" 200 1310

@@ -1,0 +1,137 @@
+
+> dealership-review-frontend@1.0.0 start
+> react-scripts start
+
+Starting the development server...
+
+Failed to compile.
+
+Module not found: Error: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.
+[1m[31mERROR[39m[22m in [1m./src/components/DetailsPage.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/Login.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/MainPage.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/Navbar.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/Register.jsx[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/ReviewPage.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+webpack compiled with [1m[31m6 errors[39m[22m
+Compiling...
+Failed to compile.
+
+Module not found: Error: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.
+[1m[31mERROR[39m[22m in [1m./src/components/DetailsPage.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/MainPage.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/Navbar.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/Register.jsx[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/ReviewPage.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+webpack compiled with [1m[31m5 errors[39m[22m
+Compiling...
+Failed to compile.
+
+Module not found: Error: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.
+[1m[31mERROR[39m[22m in [1m./src/components/DetailsPage.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/MainPage.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/Navbar.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/Register.jsx[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+webpack compiled with [1m[31m4 errors[39m[22m
+Compiling...
+Failed to compile.
+
+Module not found: Error: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.
+[1m[31mERROR[39m[22m in [1m./src/components/MainPage.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/Navbar.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/Register.jsx[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+webpack compiled with [1m[31m3 errors[39m[22m
+Compiling...
+Failed to compile.
+
+Module not found: Error: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.
+[1m[31mERROR[39m[22m in [1m./src/components/MainPage.js[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/components/Register.jsx[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+webpack compiled with [1m[31m2 errors[39m[22m
+Compiling...
+Failed to compile.
+
+Module not found: Error: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.
+[1m[31mERROR[39m[22m in [1m./src/components/Register.jsx[39m[22m [1m[32m7:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: You attempted to import ../../config which falls outside of the project src/ directory. Relative imports outside of src/ are [1m[31mnot supported[39m[22m[1m.
+You can either move it inside src/, or add a symlink to it from project's node_modules/.[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m

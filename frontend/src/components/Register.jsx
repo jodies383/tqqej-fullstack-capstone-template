@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { API_BASE } from "../../config";
+import { API_BASE } from "../config";
 export default function Register() {
   const nav = useNavigate();
   const [f, setF] = useState({
@@ -37,6 +37,7 @@ export default function Register() {
             <input
               className="form-control"
               name="username"
+              placeholder="Username"
               value={f.username}
               onChange={change}
               required
@@ -47,6 +48,7 @@ export default function Register() {
             <input
               className="form-control"
               name="first_name"
+              placeholder="First Name"
               value={f.first_name}
               onChange={change}
               required
@@ -57,6 +59,7 @@ export default function Register() {
             <input
               className="form-control"
               name="last_name"
+              placeholder="Last Name"
               value={f.last_name}
               onChange={change}
               required
@@ -68,6 +71,7 @@ export default function Register() {
               className="form-control"
               type="email"
               name="email"
+              placeholder="Email"
               value={f.email}
               onChange={change}
               required
@@ -79,6 +83,7 @@ export default function Register() {
               className="form-control"
               type="password"
               name="password"
+              placeholder="Password"
               value={f.password}
               onChange={change}
               required

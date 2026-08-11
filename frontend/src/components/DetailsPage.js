@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { API_BASE } from "../../config";
+import { API_BASE } from "../config";
 export default function DetailsPage() {
   const { id } = useParams();
   const [d, setD] = useState(null);

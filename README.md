@@ -1,10 +1,10 @@
-# Dealership Review Portal
+# fullstack_developer_capstone — Dealership Review Portal
 
 This project is a dealership review application rebuilt from the original full-stack capstone fork. The original fork supplied the React frontend structure and supporting sentiment service; the application has been adapted to the dealership-review requirements in the assessment rubric.
 
 ## Project Name
 
-**Dealership Review Portal**
+**fullstack_developer_capstone: Dealership Review Portal**
 
 ## Technology
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { API_BASE } from "../../config";
+import { API_BASE } from "../config";
 export default function MainPage() {
   const { state } = useParams();
   const [dealers, setDealers] = useState([]);
@@ -11,7 +11,7 @@ export default function MainPage() {
       `${API_BASE}/api/dealerships/${q ? `?state=${encodeURIComponent(q)}` : ""}`,
     )
       .then((r) => r.json())
-      .then((d) => setDealers(d.results || []));
+      .then((d) => setDealers(Array.isArray(d) ? d : d.results || []));
   }, [state, filter]);
   const endpoint = `${API_BASE}/api/dealerships/${state ? `?state=${encodeURIComponent(state)}` : ""}`;
   return (
