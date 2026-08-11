@@ -1,0 +1,4 @@
+COMMAND:
+curl -X POST http://127.0.0.1:8000/api-token-auth/ -H "Content-Type: application/json" -d "{\"username\":\"demo\",\"password\":\"demo1234\"}"
+
+PASTE THE REAL JSON RESPONSE HERE. It will contain a generated token.

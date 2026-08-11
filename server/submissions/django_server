@@ -1,0 +1,5 @@
+COMMAND:
+python manage.py runserver
+
+PASTE THE REAL TERMINAL OUTPUT HERE AFTER RUNNING THE SERVER.
+Expected startup line: Starting development server at http://127.0.0.1:8000/
